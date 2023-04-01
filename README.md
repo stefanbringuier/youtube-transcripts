@@ -1,4 +1,4 @@
-# YouTube Text Transcripts: PyTube+OpenAI-Whisper
+## YouTube Text Transcripts: PyTube+OpenAI-Whisper+GPT
 
 > Pass in the YouTube url and ouput file name to generate a transcript of the audio.
 
@@ -24,15 +24,15 @@ python gentranscript.py https://www.youtube.com/watch?v=ctXDXABJRtg -ai
 This will also generate `.txt` file with the date in the folder [transcripts](transcripts).
 
 ## Requirements
-See [requirements.txt](requirements.txt].
+See [requirements.txt](requirements.txt).
 
 The OpenAI-whisper package require [ffmpeg](https://ffmpeg.org/) be instaleld on your system.
 
-## Notes
+### Notes
 - You need to specify your `OPENAI_API_KEY` if you plan to use the `-ai` flag.
 > **Warning**
 > Be mindful of API usage cost!
 - The function `gpt_summarize_key_points` uses the function `split_text_into_chunks` to break-up large amounts of text which usually would be rejected by a gpt model. However, the current implementation makes many request and thus appears to also get rate limited by the openAI servers.
 
-## Acknowledgements
+### Acknowledgements
 I got the idea for this from the video https://www.youtube.com/watch?v=2936_Y80nUk&t=554s by Andy Stapleton.
