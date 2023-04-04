@@ -163,8 +163,8 @@ def display_summary(summary, url):
 
     :param summary: str, summarized text with key points
     """
-    background_color = "#0000ff"
-    terminal_color = "#000000"
+    background_color = "#ADD8E6"
+    terminal_color = "#D3D3D3"
     alpha = 0.5
 
     blended_color = blend_colors(background_color, terminal_color, alpha)
